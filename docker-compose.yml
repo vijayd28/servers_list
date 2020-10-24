@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:8.0.20
+    volumes:
+      - "db_app:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - 8306:3306
+    networks:
+      - symfony
+  php:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+      args:
+        TIMEZONE: ${TIMEZONE}
+    volumes:
+      - ./devon-api/:/var/www/devon-api/
+    networks:
+      - symfony
+
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    volumes:
+      - ./devon-api/:/var/www/devon-api/
+    ports:
+      - 8088:80
+    networks:
+      - symfony
+    depends_on:
+      - php
+  angular-ui:
+    build:
+      context: ./
+      dockerfile: docker/node/Dockerfile
+    ports:
+      - "4201:4201"
+    volumes:
+      - ./devon:/var/www/devon/
+      - /devon/node_modules
+    networks:
+      - symfony
+
+volumes:
+  db_app:
+
+networks:
+  symfony:
