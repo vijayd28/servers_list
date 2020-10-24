@@ -1,17 +1,20 @@
 version: '3'
 
 services:
-  db:
+  devon_mysql:
     image: mysql:8.0.20
-    volumes:
-      - "db_app:/var/lib/mysql"
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
-      - 8306:3306
+      - 3307:3306
+    restart: unless-stopped
+    expose:
+      - 3307
+    volumes:
+      - ./docker/mysql/my.cnf:/etc/mysql/my.cnf
     networks:
       - symfony
   php:
@@ -22,6 +25,10 @@ services:
         TIMEZONE: ${TIMEZONE}
     volumes:
       - ./devon-api/:/var/www/devon-api/
+    links:
+      - devon_mysql:devon
+    depends_on:
+      - devon_mysql
     networks:
       - symfony
 
@@ -48,9 +55,6 @@ services:
       - /devon/node_modules
     networks:
       - symfony
-
-volumes:
-  db_app:
 
 networks:
   symfony:
