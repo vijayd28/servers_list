@@ -35,9 +35,9 @@
       <change afterPath="$PROJECT_DIR$/devon-api/src/Kernel.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/src/Test/Command/DataUploadCommandTest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/symfony.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mysql/my.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +116,16 @@
       <path value="$PROJECT_DIR$/devon-api/vendor/zendframework/zend-code" />
       <path value="$PROJECT_DIR$/devon-api/vendor/zendframework/zend-eventmanager" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/symfony/polyfill-uuid" />
     </include_path>
   </component>
   <component name="ProjectId" id="1idphM0wJWU1NHMOKctvT430Tad" />
@@ -152,7 +162,8 @@
       <option name="presentableId" value="Default" />
       <updated>1602247441372</updated>
       <workItem from="1602247442966" duration="5338000" />
-      <workItem from="1603516272610" duration="15502000" />
+      <workItem from="1603516272610" duration="15782000" />
+      <workItem from="1603573142116" duration="8215000" />
     </task>
     <servers />
   </component>

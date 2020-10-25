@@ -2,6 +2,15 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
-index:
-  path: /v1/test
+server_list:
+  path: /v1/servers/list
   controller: App\Controller\ServersController::list
+  defaults:
+    page: 1
+    requirements:
+      page: '\d+'
+
+server_upload:
+  path: /v1/servers/upload
+  controller: App\Controller\ServersController::upload
+  methods: POST

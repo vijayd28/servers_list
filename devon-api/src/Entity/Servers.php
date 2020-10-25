@@ -191,4 +191,24 @@ class Servers
 
         return $this;
     }
+
+    /**
+     * @return array
+     */
+    public function toArray()
+    {
+        return [
+            'uuid'     => $this->getUuid(),
+            'model'    => $this->getModelName(),
+            'ram_size' => $this->getRamSize(),
+
+            'ram_type' => $this->getRamType(),
+            'hdd_size' => $this->getHddSize(),
+            'hdd_type' => $this->getHddType(),
+            'location' => $this->getLocation(),
+
+            'price'    => $this->getPrice(),
+            'currency' => $this->getCurrency(),
+        ];
+    }
 }
