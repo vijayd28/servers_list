@@ -34,10 +34,14 @@
       <change afterPath="$PROJECT_DIR$/devon-api/src/Controller/ServersController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/src/Kernel.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/src/Test/Command/DataUploadCommandTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devon-api/src/Test/Controllers/ServerControllerTest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/devon/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/devon/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/devon/src/app/app-routing.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +130,9 @@
       <path value="$PROJECT_DIR$/devon-api/vendor/myclabs/php-enum" />
       <path value="$PROJECT_DIR$/devon-api/vendor/maennchen/zipstream-php" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/symfony/css-selector" />
     </include_path>
   </component>
   <component name="ProjectId" id="1idphM0wJWU1NHMOKctvT430Tad" />
@@ -141,7 +148,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/devon-api" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/devon/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -163,7 +170,8 @@
       <updated>1602247441372</updated>
       <workItem from="1602247442966" duration="5338000" />
       <workItem from="1603516272610" duration="15782000" />
-      <workItem from="1603573142116" duration="8215000" />
+      <workItem from="1603573142116" duration="10650000" />
+      <workItem from="1603722749977" duration="989000" />
     </task>
     <servers />
   </component>

@@ -87,11 +87,23 @@ class ServersController
      */
     public function list(Request $request): JsonResponse
     {
-        $inputData = $request->attributes->all();
+        $inputData = $request->query->all();
+        $criteria = [];
+        if (!empty($inputData['ram_size'])) {
+            $criteria['ram_size'] = $inputData['ram_size'];
+        }
+        if (!empty($inputData['ram_type'])) {
+            $criteria['ram_type'] = $inputData['ram_type'];
+        }
+        if (!empty($inputData['hdd_type'])) {
+            $criteria['hdd_type'] = $inputData['hdd_type'];
+        }
+        if (!empty($inputData['hdd_size'])) {
+            $criteria['hdd_size'] = $inputData['hdd_size'];
+        }
 
-        $servers = $this->serversRepository->findAll();
+        $servers = $this->serversRepository->findBy($criteria);
         $data    = [];
-
         foreach ($servers as $server) {
             $data[] = $server->toArray();
         }

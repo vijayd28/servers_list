@@ -7,7 +7,18 @@ import { BrowserModule } from "@angular/platform-browser";
 import { ApiService } from "./shared/services/api.service";
 import { GlobalService } from "./shared/services/global.service";
 
-const routes: Routes = [];
+const routes: Routes = [
+    {
+        path: '',
+        // component: LayoutWideComponent,
+        // children: [
+        //     {
+        //         path: 'list',
+        //         component: CreateComponent,
+        //     }
+        // ]
+    },
+];
 
 @NgModule({
   declarations: [

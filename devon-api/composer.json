@@ -20,6 +20,8 @@
         "symfony/yaml": "5.1.*"
     },
     "require-dev": {
+        "symfony/browser-kit": "5.1.*",
+        "symfony/css-selector": "5.1.*",
         "symfony/maker-bundle": "^1.21"
     },
     "config": {
