@@ -1,2 +1,2 @@
-export { Errors } from './api-error.interface';
-export { JsendResponse } from './jsend.response.interface';
+export { Errors } from './api-error.interfaces';
+export { JsendResponse } from './json-response.interface';

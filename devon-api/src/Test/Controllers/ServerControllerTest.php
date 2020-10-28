@@ -14,4 +14,13 @@ class ServerControllerTest extends WebTestCase
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode());
     }
+
+    public function testListServersWithQeuryString()
+    {
+        $client = static::createClient();
+
+        $client->request('GET', '/v1/severs/list?hdd_type=SATA&ram_type=DDR4');
+
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+    }
 }

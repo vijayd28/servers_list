@@ -43,7 +43,6 @@ export class ApiService {
             ),
             formError: $_get(errorData, ['data', 'validation'], null),
             status: error.status,
-            code: $_get(errorData, 'code', null),
         };
 
         return throwError(errors);
