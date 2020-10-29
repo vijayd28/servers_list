@@ -58,7 +58,7 @@ class Servers
     private $location;
 
     /**
-     * @ORM\Column(type="float")
+     * @ORM\Column(type="string", length=20)
      */
     private $price;
 
@@ -168,12 +168,12 @@ class Servers
         return $this;
     }
 
-    public function getPrice(): ?float
+    public function getPrice(): ?string
     {
         return $this->price;
     }
 
-    public function setPrice(float $price): self
+    public function setPrice(string $price): self
     {
         $this->price = $price;
 

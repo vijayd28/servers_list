@@ -37,39 +37,7 @@
       <change afterPath="$PROJECT_DIR$/devon-api/src/Test/Controllers/ServerControllerTest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/.browserslistrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/e2e/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/devon/src/app/servers/interfaces/servers.interfaces.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/app/shared/interfaces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/devon/src/app/shared/interfaces/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/devon/src/app/shared/services/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/devon/src/app/shared/services/api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/tslint.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +49,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/devon-api" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/devon/package.json" />
@@ -176,7 +144,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/devon-f/src/app" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/devon-f/node_modules/typescript/lib" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/devon/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -202,7 +170,8 @@
       <workItem from="1603573142116" duration="10650000" />
       <workItem from="1603722749977" duration="1873000" />
       <workItem from="1603812470622" duration="1647000" />
-      <workItem from="1603891843382" duration="7518000" />
+      <workItem from="1603891843382" duration="8354000" />
+      <workItem from="1603962315675" duration="4322000" />
     </task>
     <servers />
   </component>
@@ -246,9 +215,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="427" y="205" width="586" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1603892583865" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1603566247900">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1603962745249">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1603566247900" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1603962745249" />
   </component>
 </project>

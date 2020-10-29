@@ -58,7 +58,8 @@ export class ApiService {
      * @memberOf ApiService
      */
     private static prepareUrl(url: string): string {
-        const apiUrl: string = GlobalService.getEnv('api.base_url');
+        //const apiUrl: string = GlobalService.getEnv('api.base_url');
+        const apiUrl: string = 'http://devon-api.vijay:8088/v1/';
 
         return ($_startsWith(url, 'http')) ? url : apiUrl + url;
     }
@@ -69,11 +70,11 @@ export class ApiService {
      *
      * @param {string} url
      * @param {URLSearchParams} params
-     * @returns {Observable<JsendResponse>}
+     * @returns {Observable<any>}
      *
      * @memberOf ApiService
      */
-    public get(url: string, params: Object = {}): Observable<HttpEvent<JsendResponse>> {
+    public get(url: string, params: Object = {}): Observable<any> {
         return this.request('GET', url, { params });
     }
 
@@ -82,7 +83,7 @@ export class ApiService {
      *
      * @param {string} url
      * @param {Object} [body]
-     * @returns {Observable<JsendResponse>}
+     * @returns {Observable<any>}
      *
      * @memberOf ApiService
      */
@@ -96,7 +97,7 @@ export class ApiService {
      *
      * @param {string} url
      * @param {Object} [body]
-     * @returns {Observable<JsendResponse>}
+     * @returns {Observable<any>}
      *
      * @memberOf ApiService
      */
@@ -110,7 +111,7 @@ export class ApiService {
      *
      * @param {string} url
      * @param {Object} [body]
-     * @returns {Observable<JsendResponse>}
+     * @returns {Observable<any>}}
      *
      * @memberOf ApiService
      */
@@ -124,7 +125,7 @@ export class ApiService {
      *
      * @param {string} url
      * @param {Object} params
-     * @returns {Observable<JsendResponse>}
+     * @returns {Observable<any>}
      *
      * @memberOf ApiService
      */
@@ -138,11 +139,11 @@ export class ApiService {
      * @param {string} method
      * @param {string} url
      * @param options
-     * @returns {Observable<JsendResponse>}
+     * @returns {Observable<any>}
      *
      * @memberOf ApiService
      */
-    private request(method: string, url: string, options): Observable<HttpEvent<JsendResponse>> {
+    private request(method: string, url: string, options): Observable<any> {
         if (options.body) {
             options.body = JSON.stringify(options.body);
         }

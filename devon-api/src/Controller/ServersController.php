@@ -157,7 +157,7 @@ class ServersController
      */
     private function insertServer($row, $slug)
     {
-        $price    = ltrim($row['E'], '€');
+        $price    = $row['E'];
         $hdd      = preg_split("/(SAS|SATA|SSD)/", $row['C'], -1, PREG_SPLIT_DELIM_CAPTURE);
         $ram      = preg_split("/(DDR3|DDR4)/", $row['B'], -1, PREG_SPLIT_DELIM_CAPTURE);
 
