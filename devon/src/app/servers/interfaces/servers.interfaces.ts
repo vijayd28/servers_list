@@ -6,6 +6,6 @@ export interface ServersList {
     hdd_type: string;
     hdd_size: string;
     location: string;
-    price: number;
+    price: string;
     currency:string;
 }
