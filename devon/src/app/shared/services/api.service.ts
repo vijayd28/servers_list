@@ -59,7 +59,7 @@ export class ApiService {
      */
     private static prepareUrl(url: string): string {
         //const apiUrl: string = GlobalService.getEnv('api.base_url');
-        const apiUrl: string = 'http://devon-api.vijay:8088/v1/';
+        const apiUrl: string = 'http://api.vijayd.com/v1/';
 
         return ($_startsWith(url, 'http')) ? url : apiUrl + url;
     }
