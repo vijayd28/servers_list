@@ -37,7 +37,11 @@
       <change afterPath="$PROJECT_DIR$/devon-api/src/Test/Controllers/ServerControllerTest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/devon/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/dist/devon/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/dist/devon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/devon/dist/devon/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/dist/devon/polyfills.35a5ca1855eb057f016a.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/dist/devon/runtime.acf0dec4155e77772545.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/dist/devon/styles.4154e53e924fd7329071.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +179,7 @@
       <workItem from="1603980797713" duration="419000" />
       <workItem from="1603992555698" duration="426000" />
       <workItem from="1604121226075" duration="27000" />
+      <workItem from="1604197980544" duration="356000" />
     </task>
     <servers />
   </component>
