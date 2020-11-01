@@ -19,7 +19,7 @@ export class ServersComponent implements AfterViewInit {
   hdd_size: any;
   ram_types: any = [  {'id': 'None', 'value': ''}, {'id':'DDR3', 'value': 'DDR3'}, {'id':'DDR4', 'value': 'DDR4'}];
   hdd_types: any = [  {'id': 'None', 'value': ''}, {'id':'SAS', 'value': 'SAS'}, {'id':'SATA', 'value': 'SATA'}, {'id':'SSD', 'value': 'SSD'}];
-  ram_sizes:any = [
+  hdd_sizes:any = [
     {'id': 'None', 'value': ''},
     {'id':'0', 'value': 'O'},
     {'id':'250GB', 'value': '250GB'},
@@ -35,7 +35,7 @@ export class ServersComponent implements AfterViewInit {
     {'id':'78TB', 'value': '78TB'},
   ];
 
-  hdd_sizes:any = [
+  ram_sizes:any = [
     {'id': 'None', 'value': ''},
     {'id':'2GB', 'value': '2GB'},
     {'id':'4GB', 'value': '4GB'},

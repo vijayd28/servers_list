@@ -42,7 +42,7 @@ class ServersController
     {
         $file = $request->files->get('file');
 
-        $fileFolder = __DIR__ . '/../../public/uploads/';
+        $fileFolder = __DIR__ . '/../../var/uploads/';
 
         $filePathName = md5(uniqid()) . $file->getClientOriginalName();
         try {
@@ -172,7 +172,7 @@ class ServersController
             ->setHddSize($hdd[0])
             ->setHddType($hdd[1])
             ->setLocation($row['D'])
-            ->setPrice((float)$price)
+            ->setPrice($price)
             ->setCurrency('euro');
 
         try {

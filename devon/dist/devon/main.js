@@ -350,7 +350,7 @@ class ServersComponent {
         this.data = [];
         this.ram_types = [{ 'id': 'None', 'value': '' }, { 'id': 'DDR3', 'value': 'DDR3' }, { 'id': 'DDR4', 'value': 'DDR4' }];
         this.hdd_types = [{ 'id': 'None', 'value': '' }, { 'id': 'SAS', 'value': 'SAS' }, { 'id': 'SATA', 'value': 'SATA' }, { 'id': 'SSD', 'value': 'SSD' }];
-        this.ram_sizes = [
+        this.hdd_sizes = [
             { 'id': 'None', 'value': '' },
             { 'id': '0', 'value': 'O' },
             { 'id': '250GB', 'value': '250GB' },
@@ -365,7 +365,7 @@ class ServersComponent {
             { 'id': '48TB', 'value': '48TB' },
             { 'id': '78TB', 'value': '78TB' },
         ];
-        this.hdd_sizes = [
+        this.ram_sizes = [
             { 'id': 'None', 'value': '' },
             { 'id': '2GB', 'value': '2GB' },
             { 'id': '4GB', 'value': '4GB' },

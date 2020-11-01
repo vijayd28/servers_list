@@ -38,6 +38,9 @@
       <change afterPath="$PROJECT_DIR$/devon-api/src/Test/Controllers/ServerControllerTest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/dist/devon/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/devon/dist/devon/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/dist/devon/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/devon/dist/devon/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devon/src/app/servers/servers.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/devon/src/app/servers/servers.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +182,7 @@
       <workItem from="1604121226075" duration="27000" />
       <workItem from="1604197980544" duration="1475000" />
       <workItem from="1604211194980" duration="745000" />
-      <workItem from="1604236484550" duration="677000" />
+      <workItem from="1604236484550" duration="2269000" />
     </task>
     <servers />
   </component>
@@ -223,10 +226,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="427" y="205" width="586" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1604200560538" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604236503041">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604240335124">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604236503041" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604240335124" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
