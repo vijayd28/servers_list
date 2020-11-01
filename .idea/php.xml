@@ -45,22 +45,18 @@
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/sql-formatter" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/doctrine-migrations-bundle" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/event-manager" />
-      <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/reflection" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/doctrine-bundle" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/collections" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/migrations" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/common" />
       <path value="$PROJECT_DIR$/devon-api/vendor/ocramius/proxy-manager" />
-      <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/orm" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/doctrine-bridge" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/stopwatch" />
       <path value="$PROJECT_DIR$/devon-api/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/maker-bundle" />
-      <path value="$PROJECT_DIR$/devon-api/vendor/zendframework/zend-code" />
-      <path value="$PROJECT_DIR$/devon-api/vendor/zendframework/zend-eventmanager" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/devon-api/vendor/phpoffice/phpspreadsheet" />
       <path value="$PROJECT_DIR$/devon-api/vendor/psr/simple-cache" />
@@ -75,6 +71,12 @@
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/dom-crawler" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/nelmio/cors-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

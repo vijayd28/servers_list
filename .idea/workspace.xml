@@ -36,12 +36,9 @@
       <change afterPath="$PROJECT_DIR$/devon-api/src/Test/Command/DataUploadCommandTest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/src/Test/Controllers/ServerControllerTest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/dist/devon/3rdpartylicenses.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/dist/devon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/devon/dist/devon/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/dist/devon/polyfills.35a5ca1855eb057f016a.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/dist/devon/runtime.acf0dec4155e77772545.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/dist/devon/styles.4154e53e924fd7329071.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/devon-api" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/devon/package.json" />
@@ -103,22 +100,18 @@
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/sql-formatter" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/doctrine-migrations-bundle" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/event-manager" />
-      <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/reflection" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/doctrine-bundle" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/collections" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/migrations" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/common" />
       <path value="$PROJECT_DIR$/devon-api/vendor/ocramius/proxy-manager" />
-      <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/orm" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/doctrine-bridge" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/stopwatch" />
       <path value="$PROJECT_DIR$/devon-api/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/maker-bundle" />
-      <path value="$PROJECT_DIR$/devon-api/vendor/zendframework/zend-code" />
-      <path value="$PROJECT_DIR$/devon-api/vendor/zendframework/zend-eventmanager" />
       <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/cache" />
       <path value="$PROJECT_DIR$/devon-api/vendor/phpoffice/phpspreadsheet" />
       <path value="$PROJECT_DIR$/devon-api/vendor/psr/simple-cache" />
@@ -133,6 +126,12 @@
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/browser-kit" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/dom-crawler" />
       <path value="$PROJECT_DIR$/devon-api/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/devon-api/vendor/nelmio/cors-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1idphM0wJWU1NHMOKctvT430Tad" />
@@ -179,7 +178,8 @@
       <workItem from="1603980797713" duration="419000" />
       <workItem from="1603992555698" duration="426000" />
       <workItem from="1604121226075" duration="27000" />
-      <workItem from="1604197980544" duration="356000" />
+      <workItem from="1604197980544" duration="1475000" />
+      <workItem from="1604211194980" duration="649000" />
     </task>
     <servers />
   </component>
@@ -219,10 +219,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="429" y="183" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1603519139010" />
-    <state x="427" y="205" width="586" height="490" key="find.popup" timestamp="1603892583865">
+    <state x="427" y="205" width="586" height="490" key="find.popup" timestamp="1604200560538">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="427" y="205" width="586" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1603892583865" />
+    <state x="427" y="205" width="586" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1604200560538" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1603992563242">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
