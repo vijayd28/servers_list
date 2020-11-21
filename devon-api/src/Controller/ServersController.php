@@ -2,15 +2,13 @@
 
 namespace App\Controller;
 
-use App\Entity\Servers;
-use Doctrine\ORM\ORMException;
-use App\Repository\ServersRepository;
+use App\Services\ServerService;
+use App\Services\FileUploadService;
+use App\Services\FileFilterService;
 use PhpOffice\PhpSpreadsheet\IOFactory;
-use Doctrine\ORM\OptimisticLockException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\File\Exception\FileException;
 
 /**
  * Class ServersController
@@ -19,17 +17,58 @@ use Symfony\Component\HttpFoundation\File\Exception\FileException;
 class ServersController
 {
     /**
-     * @var ServersRepository
+     * @var FileUploadService
      */
-    private $serversRepository;
+    private $fileUploadService;
+    /**
+     * @var ServerService
+     */
+    private $serverService;
 
     /**
      * ServersController constructor.
-     * @param ServersRepository $serversRepository
+     * @param FileUploadService $fileUploadService
+     * @param ServerService $serverService
      */
-    public function __construct(ServersRepository $serversRepository)
+    public function __construct(
+        FileUploadService $fileUploadService,
+        ServerService  $serverService
+    ) {
+        $this->fileUploadService = $fileUploadService;
+        $this->serverService = $serverService;
+    }
+
+    /**
+     * Function to get list of server based on filters
+     *
+     * @param Request $request
+     * @return JsonResponse
+     * @throws \PhpOffice\PhpSpreadsheet\Reader\Exception
+     */
+    public function listFromFile(Request $request): JsonResponse
     {
-        $this->serversRepository = $serversRepository;
+        $file = $request->files->get('file');
+        $path = $this->fileUploadService->upload($file);
+        $inputData = $request->query->all();
+        $fileFilterService = new FileFilterService($path);
+        if (!empty($inputData['ram_size'])) {
+            $fileFilterService->setRule('', $inputData['ram_size']);
+        }
+        if (!empty($inputData['ram_type'])) {
+            $fileFilterService->setRule('', $inputData['ram_type']);
+        }
+        if (!empty($inputData['hdd_type'])) {
+            $fileFilterService->setRule('', $inputData['hdd_type']);
+        }
+        if (!empty($inputData['hdd_size'])) {
+            $fileFilterService->setRule('', $inputData['hdd_size']);
+        }
+
+        return new JsonResponse([
+                                    'success' => true,
+                                    'data'    => $fileFilterService->toArray()
+                                ], Response::HTTP_OK);
+
     }
 
     /**
@@ -41,34 +80,15 @@ class ServersController
     public function upload(Request $request)
     {
         $file = $request->files->get('file');
-
-        $fileFolder = __DIR__ . '/../../var/uploads/';
-
-        $filePathName = md5(uniqid()) . $file->getClientOriginalName();
-        try {
-            $file->move($fileFolder, $filePathName);
-        } catch (FileException $e) {
-            return new JsonResponse([
-                'success' => false,
-                'data'    => [],
-                'message' => 'Something went wrong when file upload.'
-            ], Response::HTTP_BAD_REQUEST);
-        }
-        $spreadsheet = IOFactory::load($fileFolder . $filePathName);
+        $spreadsheet = IOFactory::load($this->fileUploadService->upload($file));
         $sheetData   = $spreadsheet
             ->getActiveSheet()
             ->toArray(null, true, true, true);
 
+        array_shift($sheetData); //Remove titles
         foreach ($sheetData as $row) {
-            if ($row['B'] == 'RAM') {
-                continue;
-            }
-            $slug   = $this->slugify($row['A']);
-            $server = $this->serversRepository->findOneBy(['model_slug' => $slug]);
-            if (!$server) {
-                //TODO: Validate data before inserting
-                $this->insertServer($row, $slug);
-            }
+            //TODO: Validate data before inserting
+            $this->serverService->insertServer($row);
         }
 
         return new JsonResponse([
@@ -88,99 +108,11 @@ class ServersController
     public function list(Request $request): JsonResponse
     {
         $inputData = $request->query->all();
-        $criteria = [];
-        if (!empty($inputData['ram_size'])) {
-            $criteria['ram_size'] = $inputData['ram_size'];
-        }
-        if (!empty($inputData['ram_type'])) {
-            $criteria['ram_type'] = $inputData['ram_type'];
-        }
-        if (!empty($inputData['hdd_type'])) {
-            $criteria['hdd_type'] = $inputData['hdd_type'];
-        }
-        if (!empty($inputData['hdd_size'])) {
-            $criteria['hdd_size'] = $inputData['hdd_size'];
-        }
-
-        $servers = $this->serversRepository->findBy($criteria);
-        $data    = [];
-        foreach ($servers as $server) {
-            $data[] = $server->toArray();
-        }
 
         return new JsonResponse([
             'success' => true,
-            'data'    => $data
+            'data'    => $this->serverService->list($inputData)
         ], Response::HTTP_OK);
     }
 
-
-    /**
-     * Function to slugify the  model name
-     *
-     * @param $text
-     * @return string
-     */
-    private function slugify($text)
-    {
-        // replace non letter or digits by -
-        $text = preg_replace('~[^\pL\d]+~u', '-', $text);
-
-        // transliterate
-        $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-
-        // remove unwanted characters
-        $text = preg_replace('~[^-\w]+~', '', $text);
-
-        // trim
-        $text = trim($text, '-');
-
-        // remove duplicate -
-        $text = preg_replace('~-+~', '-', $text);
-
-        // lowercase
-        $text = strtolower($text);
-
-        if (empty($text)) {
-            return 'n-a';
-        }
-
-        return $text;
-    }
-
-    /**
-     * Function to format and insert the server entry
-     *
-     * @param $row
-     * @param $slug
-     * @return false|void
-     */
-    private function insertServer($row, $slug)
-    {
-        $price    = $row['E'];
-        $hdd      = preg_split("/(SAS|SATA|SSD)/", $row['C'], -1, PREG_SPLIT_DELIM_CAPTURE);
-        $ram      = preg_split("/(DDR3|DDR4)/", $row['B'], -1, PREG_SPLIT_DELIM_CAPTURE);
-
-        $newServer = new Servers();
-
-        $newServer
-            ->setUuid(uuid_create(UUID_TYPE_RANDOM))
-            ->setModelName($row['A'])
-            ->setModelSlug($slug)
-            ->setRamSize($ram[0])
-            ->setRamType($ram[1])
-            ->setHddSize($hdd[0])
-            ->setHddType($hdd[1])
-            ->setLocation($row['D'])
-            ->setPrice($price)
-            ->setCurrency('euro');
-
-        try {
-            return $this->serversRepository->saveServer($newServer);
-        } catch (OptimisticLockException $e) {
-            return false;
-        } catch (ORMException $e) {
-            return false;
-        }
-    }
 }

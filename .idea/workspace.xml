@@ -34,13 +34,14 @@
       <change afterPath="$PROJECT_DIR$/devon-api/src/Controller/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/src/Controller/ServersController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/src/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devon-api/src/Services/FileFilterService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devon-api/src/Services/FileUploadService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devon-api/src/Services/ServerService.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/src/Test/Command/DataUploadCommandTest.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/src/Test/Controllers/ServerControllerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devon-api/src/Utils/Excel/Filter/ChunkReadFilter.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/devon-api/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/dist/devon/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/devon/dist/devon/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/dist/devon/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/devon/dist/devon/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devon/src/app/servers/servers.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/devon/src/app/servers/servers.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,19 +148,20 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/devon-api" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/devon-api/src/Services" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/devon/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/devon-api/src/Test/Command" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/devon-api/src/Services" />
       <recent name="$PROJECT_DIR$/devon-api" />
       <recent name="$PROJECT_DIR$/devon-f/src/app" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/devon-api/src/Test/Command" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -183,6 +185,7 @@
       <workItem from="1604197980544" duration="1475000" />
       <workItem from="1604211194980" duration="745000" />
       <workItem from="1604236484550" duration="2269000" />
+      <workItem from="1605966916640" duration="2789000" />
     </task>
     <servers />
   </component>
@@ -218,10 +221,18 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1602309558985" />
-    <state x="429" y="183" key="NewPhpClassDialog" timestamp="1603519139010">
+    <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605969922383">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="429" y="183" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1603519139010" />
+    <state x="458" y="209" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605969922383" />
+    <state x="429" y="183" key="NewPhpClassDialog" timestamp="1605674298779">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="429" y="183" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1605674298779" />
+    <state x="543" y="380" key="NewPhpFileDialog" timestamp="1605674247556">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="543" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1605674247556" />
     <state x="427" y="205" width="586" height="490" key="find.popup" timestamp="1604200560538">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

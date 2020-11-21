@@ -28,11 +28,6 @@ class Servers
     private $model_name;
 
     /**
-     * @ORM\Column(type="string", length=120)
-     */
-    private $model_slug;
-
-    /**
      * @ORM\Column(type="string", length=20)
      */
     private $ram_size;
@@ -92,18 +87,6 @@ class Servers
     public function setModelName(string $model_name): self
     {
         $this->model_name = $model_name;
-
-        return $this;
-    }
-
-    public function getModelSlug(): ?string
-    {
-        return $this->model_slug;
-    }
-
-    public function setModelSlug(string $model_slug): self
-    {
-        $this->model_slug = $model_slug;
 
         return $this;
     }

@@ -2,6 +2,13 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
+
+
+server_upload_list:
+  path: /v1/servers/upload_list
+  controller: App\Controller\ServersController::listFromFile
+  methods: POST
+
 server_list:
   path: /v1/servers/list
   controller: App\Controller\ServersController::list
@@ -14,3 +21,4 @@ server_upload:
   path: /v1/servers/upload
   controller: App\Controller\ServersController::upload
   methods: POST
+
