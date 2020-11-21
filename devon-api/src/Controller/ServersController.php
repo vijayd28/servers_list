@@ -87,8 +87,7 @@ class ServersController
 
         array_shift($sheetData); //Remove titles
         foreach ($sheetData as $row) {
-            //TODO: Validate data before inserting
-            $this->serverService->insertServer($row);
+            $this->serverService->insert($row);
         }
 
         return new JsonResponse([
