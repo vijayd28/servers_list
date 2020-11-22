@@ -12,6 +12,7 @@ server_upload_list:
 server_list:
   path: /v1/servers/list
   controller: App\Controller\ServersController::list
+  methods: GET
   defaults:
     page: 1
     requirements:
