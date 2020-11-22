@@ -20,15 +20,15 @@ class FileFilterService
      * @var $spreadsheet;
      */
     private $spreadsheet;
+    private $targetDirectory;
 
     /**
      * FileFilterService constructor.
-     * @param $fileName
-     * @throws \PhpOffice\PhpSpreadsheet\Reader\Exception
+     * @param $targetDirectory
      */
-    public function __construct($fileName)
+    public function __construct($targetDirectory)
     {
-        $this->init($fileName);
+        $this->targetDirectory = $targetDirectory;
     }
 
     /**
@@ -37,8 +37,10 @@ class FileFilterService
      */
     public function init($fileName)
     {
-        $this->reader = IOFactory::createReader('xls');
-        $this->spreadsheet = $this->reader->load($fileName);
+        $this->reader = IOFactory::createReader('Xls');
+        $this->spreadsheet = $this->reader->load($this->targetDirectory . '/'. $fileName);
+
+        return $this;
     }
 
     public function setRule($column, $value)

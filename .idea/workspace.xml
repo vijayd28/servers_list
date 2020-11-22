@@ -148,20 +148,21 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/devon-api/src/Services" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/devon-api/var/uploads" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/devon/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/devon-api/src/Test/Command" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/devon-api/var/uploads" />
       <recent name="$PROJECT_DIR$/devon-api/src/Services" />
       <recent name="$PROJECT_DIR$/devon-api" />
       <recent name="$PROJECT_DIR$/devon-f/src/app" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/devon-api/src/Test/Command" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -186,7 +187,7 @@
       <workItem from="1604211194980" duration="745000" />
       <workItem from="1604236484550" duration="2269000" />
       <workItem from="1605966916640" duration="3363000" />
-      <workItem from="1606052437484" duration="1037000" />
+      <workItem from="1606052437484" duration="3480000" />
     </task>
     <servers />
   </component>
@@ -210,10 +211,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="529" y="337" key="#Composer/0.0.1440.900@0.0.1440.900" timestamp="1602247490909" />
-    <state x="472" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603567013641">
+    <state x="472" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606059616587">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="472" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1603567013641" />
+    <state x="472" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1606059616587" />
     <state x="429" y="169" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603517951678">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

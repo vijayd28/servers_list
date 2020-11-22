@@ -24,18 +24,25 @@ class ServersController
      * @var ServerService
      */
     private $serverService;
+    /**
+     * @var FileFilterService
+     */
+    private $fileFilterService;
 
     /**
      * ServersController constructor.
      * @param FileUploadService $fileUploadService
+     * @param FileFilterService $fileFilterService
      * @param ServerService $serverService
      */
     public function __construct(
         FileUploadService $fileUploadService,
+        FileFilterService $fileFilterService,
         ServerService  $serverService
     ) {
         $this->fileUploadService = $fileUploadService;
         $this->serverService = $serverService;
+        $this->fileFilterService = $fileFilterService;
     }
 
     /**
@@ -50,7 +57,9 @@ class ServersController
         $file = $request->files->get('file');
         $path = $this->fileUploadService->upload($file);
         $inputData = $request->query->all();
-        $fileFilterService = new FileFilterService($path);
+        $fileFilterService = $this->fileFilterService->init($path);
+
+
         if (!empty($inputData['ram_size'])) {
             $fileFilterService->setRule('', $inputData['ram_size']);
         }
